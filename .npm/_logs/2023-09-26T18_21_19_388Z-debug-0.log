@@ -1,0 +1,205 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.8.1
+2 info using node@v18.18.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 0ms
+10 timing config:load:file:/home/container/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 9ms
+16 timing npm:load:configload Completed in 9ms
+17 timing config:load:flatten Completed in 3ms
+18 timing npm:load:mkdirpcache Completed in 78ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm i mongodb
+21 verbose argv "i" "mongodb"
+22 timing npm:load:setTitle Completed in 2ms
+23 timing npm:load:display Completed in 1ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-09-26T18_21_19_388Z-
+25 verbose logfile /home/container/.npm/_logs/2023-09-26T18_21_19_388Z-debug-0.log
+26 timing npm:load:logFile Completed in 10ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 190ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 407ms
+33 timing idealTree:userRequests Completed in 2ms
+34 silly idealTree buildDeps
+35 silly fetch manifest mongodb@*
+36 timing arborist:ctor Completed in 1ms
+37 http fetch GET 200 https://registry.npmjs.org/mongodb 296ms (cache hit)
+38 silly fetch manifest @aws-sdk/credential-providers@^3.188.0
+39 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-providers 6ms (cache hit)
+40 silly fetch manifest @mongodb-js/zstd@^1.1.0
+41 http fetch GET 200 https://registry.npmjs.org/@mongodb-js%2fzstd 729ms (cache miss)
+42 silly fetch manifest gcp-metadata@^5.2.0
+43 http fetch GET 200 https://registry.npmjs.org/gcp-metadata 39ms (cache miss)
+44 silly fetch manifest kerberos@^2.0.1
+45 http fetch GET 200 https://registry.npmjs.org/kerberos 359ms (cache miss)
+46 silly fetch manifest mongodb-client-encryption@>=6.0.0 <7
+47 http fetch GET 200 https://registry.npmjs.org/mongodb-client-encryption 120ms (cache miss)
+48 silly fetch manifest snappy@^7.2.2
+49 http fetch GET 200 https://registry.npmjs.org/snappy 369ms (cache miss)
+50 silly fetch manifest socks@^2.7.1
+51 http fetch GET 200 https://registry.npmjs.org/socks 5ms (cache hit)
+52 silly placeDep ROOT mongodb@6.1.0 REPLACE for: container@1.0.0 want: *
+53 silly fetch manifest bson@^6.1.0
+54 http fetch GET 200 https://registry.npmjs.org/bson 4ms (cache hit)
+55 timing idealTree:#root Completed in 1972ms
+56 silly placeDep node_modules/mongodb bson@6.1.0 OK for: mongodb@6.1.0 want: ^6.1.0
+57 timing idealTree:node_modules/mongodb Completed in 4ms
+58 silly fetch manifest mongodb@4.17.1
+59 silly placeDep node_modules/mongoose mongodb@4.17.1 OK for: mongoose@6.12.0 want: 4.17.1
+60 timing idealTree:node_modules/mongoose Completed in 2ms
+61 timing idealTree:node_modules/mongodb/node_modules/bson Completed in 0ms
+62 timing idealTree:node_modules/mongoose/node_modules/mongodb Completed in 0ms
+63 timing idealTree:buildDeps Completed in 1979ms
+64 timing idealTree:fixDepFlags Completed in 1ms
+65 timing idealTree Completed in 2392ms
+66 timing reify:loadTrees Completed in 2450ms
+67 timing reify:diffTrees Completed in 3ms
+68 silly reify mark retired [ '/home/container/node_modules/mongodb' ]
+69 silly reify moves {
+69 silly reify   '/home/container/node_modules/mongodb': '/home/container/node_modules/.mongodb-B1rqjzD5'
+69 silly reify }
+70 timing reify:retireShallow Completed in 4ms
+71 timing reify:createSparse Completed in 1ms
+72 timing reify:loadBundles Completed in 0ms
+73 silly audit bulk request {
+73 silly audit   '@aws-crypto/crc32': [ '3.0.0' ],
+73 silly audit   tslib: [ '1.14.1', '2.6.2' ],
+73 silly audit   '@aws-crypto/ie11-detection': [ '3.0.0' ],
+73 silly audit   '@aws-crypto/sha256-browser': [ '3.0.0' ],
+73 silly audit   '@aws-crypto/sha256-js': [ '3.0.0' ],
+73 silly audit   '@aws-crypto/supports-web-crypto': [ '3.0.0' ],
+73 silly audit   '@aws-crypto/util': [ '3.0.0' ],
+73 silly audit   '@aws-sdk/client-cognito-identity': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/client-sso': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/client-sts': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-provider-cognito-identity': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-provider-env': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-provider-ini': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-provider-node': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-provider-process': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-provider-sso': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-provider-web-identity': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/credential-providers': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/middleware-host-header': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/middleware-logger': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/middleware-recursion-detection': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/middleware-sdk-sts': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/middleware-signing': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/middleware-user-agent': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/region-config-resolver': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/token-providers': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/types': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/util-endpoints': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/util-locate-window': [ '3.310.0' ],
+73 silly audit   '@aws-sdk/util-user-agent-browser': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/util-user-agent-node': [ '3.418.0' ],
+73 silly audit   '@aws-sdk/util-utf8-browser': [ '3.259.0' ],
+73 silly audit   '@mongodb-js/saslprep': [ '1.1.0' ],
+73 silly audit   '@smithy/abort-controller': [ '2.0.9' ],
+73 silly audit   '@smithy/config-resolver': [ '2.0.10' ],
+73 silly audit   '@smithy/credential-provider-imds': [ '2.0.12' ],
+73 silly audit   '@smithy/eventstream-codec': [ '2.0.9' ],
+73 silly audit   '@smithy/fetch-http-handler': [ '2.1.5' ],
+73 silly audit   '@smithy/hash-node': [ '2.0.9' ],
+73 silly audit   '@smithy/invalid-dependency': [ '2.0.9' ],
+73 silly audit   '@smithy/is-array-buffer': [ '2.0.0' ],
+73 silly audit   '@smithy/middleware-content-length': [ '2.0.11' ],
+73 silly audit   '@smithy/middleware-endpoint': [ '2.0.9' ],
+73 silly audit   '@smithy/middleware-retry': [ '2.0.12' ],
+73 silly audit   '@smithy/middleware-serde': [ '2.0.9' ],
+73 silly audit   '@smithy/middleware-stack': [ '2.0.3' ],
+73 silly audit   '@smithy/node-config-provider': [ '2.0.12' ],
+73 silly audit   '@smithy/node-http-handler': [ '2.1.5' ],
+73 silly audit   '@smithy/property-provider': [ '2.0.10' ],
+73 silly audit   '@smithy/protocol-http': [ '3.0.5' ],
+73 silly audit   '@smithy/querystring-builder': [ '2.0.9' ],
+73 silly audit   '@smithy/querystring-parser': [ '2.0.9' ],
+73 silly audit   '@smithy/service-error-classification': [ '2.0.2' ],
+73 silly audit   '@smithy/shared-ini-file-loader': [ '2.0.11' ],
+73 silly audit   '@smithy/signature-v4': [ '2.0.9' ],
+73 silly audit   '@smithy/smithy-client': [ '2.1.7' ],
+73 silly audit   '@smithy/types': [ '2.3.3' ],
+73 silly audit   '@smithy/url-parser': [ '2.0.9' ],
+73 silly audit   '@smithy/util-base64': [ '2.0.0' ],
+73 silly audit   '@smithy/util-body-length-browser': [ '2.0.0' ],
+73 silly audit   '@smithy/util-body-length-node': [ '2.1.0' ],
+73 silly audit   '@smithy/util-buffer-from': [ '2.0.0' ],
+73 silly audit   '@smithy/util-config-provider': [ '2.0.0' ],
+73 silly audit   '@smithy/util-defaults-mode-browser': [ '2.0.11' ],
+73 silly audit   '@smithy/util-defaults-mode-node': [ '2.0.13' ],
+73 silly audit   '@smithy/util-hex-encoding': [ '2.0.0' ],
+73 silly audit   '@smithy/util-middleware': [ '2.0.2' ],
+73 silly audit   '@smithy/util-retry': [ '2.0.2' ],
+73 silly audit   '@smithy/util-stream': [ '2.0.12' ],
+73 silly audit   '@smithy/util-uri-escape': [ '2.0.0' ],
+73 silly audit   '@smithy/util-utf8': [ '2.0.0' ],
+73 silly audit   '@types/node': [ '20.7.0' ],
+73 silly audit   '@types/webidl-conversions': [ '7.0.1' ],
+73 silly audit   '@types/whatwg-url': [ '8.2.2' ],
+73 silly audit   'base64-js': [ '1.5.1' ],
+73 silly audit   bowser: [ '2.11.0' ],
+73 silly audit   bson: [ '4.7.2', '6.1.0' ],
+73 silly audit   buffer: [ '5.7.1' ],
+73 silly audit   debug: [ '4.3.4' ],
+73 silly audit   ms: [ '2.1.2', '2.1.3' ],
+73 silly audit   'fast-xml-parser': [ '4.2.5' ],
+73 silly audit   ieee754: [ '1.2.1' ],
+73 silly audit   ip: [ '2.0.0' ],
+73 silly audit   kareem: [ '2.5.1' ],
+73 silly audit   'memory-pager': [ '1.5.0' ],
+73 silly audit   'mongodb-connection-string-url': [ '2.6.0' ],
+73 silly audit   mongoose: [ '6.12.0' ],
+73 silly audit   mpath: [ '0.9.0' ],
+73 silly audit   mquery: [ '4.0.3' ],
+73 silly audit   punycode: [ '2.3.0' ],
+73 silly audit   sift: [ '16.0.1' ],
+73 silly audit   'smart-buffer': [ '4.2.0' ],
+73 silly audit   socks: [ '2.7.1' ],
+73 silly audit   'sparse-bitfield': [ '3.0.3' ],
+73 silly audit   strnum: [ '1.0.5' ],
+73 silly audit   tr46: [ '3.0.0' ],
+73 silly audit   uuid: [ '8.3.2' ],
+73 silly audit   'webidl-conversions': [ '7.0.0' ],
+73 silly audit   'whatwg-url': [ '11.0.0' ],
+73 silly audit   mongodb: [ '6.1.0', '4.17.1' ]
+73 silly audit }
+74 silly tarball no local data for bson@https://registry.npmjs.org/bson/-/bson-6.1.0.tgz. Extracting by manifest.
+75 silly tarball no local data for mongodb@https://registry.npmjs.org/mongodb/-/mongodb-6.1.0.tgz. Extracting by manifest.
+76 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 301ms
+77 timing auditReport:getReport Completed in 305ms
+78 silly audit report {}
+79 timing auditReport:init Completed in 0ms
+80 timing reify:audit Completed in 306ms
+81 http fetch GET 200 https://registry.npmjs.org/bson/-/bson-6.1.0.tgz 989ms (cache miss)
+82 timing reifyNode:node_modules/mongodb/node_modules/bson Completed in 1001ms
+83 timing reifyNode:node_modules/mongoose/node_modules/mongodb Completed in 1296ms
+84 http fetch GET 200 https://registry.npmjs.org/mongodb/-/mongodb-6.1.0.tgz 1402ms (cache miss)
+85 timing reifyNode:node_modules/mongodb Completed in 1414ms
+86 timing reify:unpack Completed in 1414ms
+87 timing reify:unretire Completed in 0ms
+88 timing build:queue Completed in 0ms
+89 timing build:deps Completed in 1ms
+90 timing build Completed in 1ms
+91 timing reify:build Completed in 1ms
+92 timing reify:trash Completed in 87ms
+93 timing reify:save Completed in 190ms
+94 timing reify Completed in 4271ms
+95 silly ADD node_modules/mongoose/node_modules/mongodb
+96 silly CHANGE node_modules/mongodb
+97 silly ADD node_modules/mongodb/node_modules/bson
+98 timing command:i Completed in 4283ms
+99 verbose exit 0
+100 timing npm Completed in 4896ms
+101 info ok

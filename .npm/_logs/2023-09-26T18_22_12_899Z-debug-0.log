@@ -1,0 +1,377 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.8.1
+2 info using node@v18.18.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 63ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/container/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 69ms
+16 timing npm:load:configload Completed in 69ms
+17 timing config:load:flatten Completed in 3ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm i axios
+21 verbose argv "i" "axios"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-09-26T18_22_12_899Z-
+25 verbose logfile /home/container/.npm/_logs/2023-09-26T18_22_12_899Z-debug-0.log
+26 timing npm:load:logFile Completed in 9ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 183ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 525ms
+33 timing idealTree:userRequests Completed in 2ms
+34 silly idealTree buildDeps
+35 silly fetch manifest axios@*
+36 timing arborist:ctor Completed in 0ms
+37 http fetch GET 200 https://registry.npmjs.org/axios 1050ms (cache miss)
+38 silly placeDep ROOT axios@1.5.1 OK for: container@1.0.0 want: *
+39 silly fetch manifest follow-redirects@^1.15.0
+40 silly fetch manifest form-data@^4.0.0
+41 silly fetch manifest proxy-from-env@^1.1.0
+42 http fetch GET 200 https://registry.npmjs.org/follow-redirects 43ms (cache miss)
+43 http fetch GET 200 https://registry.npmjs.org/form-data 48ms (cache miss)
+44 http fetch GET 200 https://registry.npmjs.org/proxy-from-env 85ms (cache miss)
+45 timing idealTree:#root Completed in 1150ms
+46 silly placeDep ROOT follow-redirects@1.15.3 OK for: axios@1.5.1 want: ^1.15.0
+47 silly placeDep ROOT form-data@4.0.0 OK for: axios@1.5.1 want: ^4.0.0
+48 silly fetch manifest asynckit@^0.4.0
+49 silly fetch manifest combined-stream@^1.0.8
+50 silly fetch manifest mime-types@^2.1.12
+51 silly placeDep ROOT proxy-from-env@1.1.0 OK for: axios@1.5.1 want: ^1.1.0
+52 http fetch GET 200 https://registry.npmjs.org/asynckit 31ms (cache miss)
+53 http fetch GET 200 https://registry.npmjs.org/mime-types 35ms (cache miss)
+54 http fetch GET 200 https://registry.npmjs.org/combined-stream 41ms (cache miss)
+55 timing idealTree:node_modules/axios Completed in 48ms
+56 timing idealTree:node_modules/follow-redirects Completed in 0ms
+57 silly placeDep ROOT asynckit@0.4.0 OK for: form-data@4.0.0 want: ^0.4.0
+58 silly placeDep ROOT combined-stream@1.0.8 OK for: form-data@4.0.0 want: ^1.0.8
+59 silly fetch manifest delayed-stream@~1.0.0
+60 silly placeDep ROOT mime-types@2.1.35 OK for: form-data@4.0.0 want: ^2.1.12
+61 silly fetch manifest mime-db@1.52.0
+62 http fetch GET 200 https://registry.npmjs.org/delayed-stream 60ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/mime-db 62ms (cache miss)
+64 timing idealTree:node_modules/form-data Completed in 69ms
+65 timing idealTree:node_modules/asynckit Completed in 0ms
+66 silly placeDep ROOT delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+67 timing idealTree:node_modules/combined-stream Completed in 2ms
+68 timing idealTree:node_modules/delayed-stream Completed in 0ms
+69 silly placeDep ROOT mime-db@1.52.0 OK for: mime-types@2.1.35 want: 1.52.0
+70 timing idealTree:node_modules/mime-types Completed in 1ms
+71 timing idealTree:node_modules/mime-db Completed in 0ms
+72 timing idealTree:node_modules/proxy-from-env Completed in 0ms
+73 timing idealTree:buildDeps Completed in 1272ms
+74 timing idealTree:fixDepFlags Completed in 5ms
+75 timing idealTree Completed in 1809ms
+76 timing reify:loadTrees Completed in 1810ms
+77 timing reify:diffTrees Completed in 6ms
+78 silly reify moves {}
+79 timing reify:retireShallow Completed in 1ms
+80 timing reify:createSparse Completed in 2ms
+81 timing reify:loadBundles Completed in 0ms
+82 silly audit bulk request {
+82 silly audit   '@aws-crypto/crc32': [ '3.0.0' ],
+82 silly audit   tslib: [ '1.14.1', '2.6.2' ],
+82 silly audit   '@aws-crypto/ie11-detection': [ '3.0.0' ],
+82 silly audit   '@aws-crypto/sha256-browser': [ '3.0.0' ],
+82 silly audit   '@aws-crypto/sha256-js': [ '3.0.0' ],
+82 silly audit   '@aws-crypto/supports-web-crypto': [ '3.0.0' ],
+82 silly audit   '@aws-crypto/util': [ '3.0.0' ],
+82 silly audit   '@aws-sdk/client-cognito-identity': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/client-sso': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/client-sts': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-provider-cognito-identity': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-provider-env': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-provider-ini': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-provider-node': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-provider-process': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-provider-sso': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-provider-web-identity': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/credential-providers': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/middleware-host-header': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/middleware-logger': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/middleware-recursion-detection': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/middleware-sdk-sts': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/middleware-signing': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/middleware-user-agent': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/region-config-resolver': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/token-providers': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/types': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/util-endpoints': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/util-locate-window': [ '3.310.0' ],
+82 silly audit   '@aws-sdk/util-user-agent-browser': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/util-user-agent-node': [ '3.418.0' ],
+82 silly audit   '@aws-sdk/util-utf8-browser': [ '3.259.0' ],
+82 silly audit   '@discordjs/builders': [ '1.6.5' ],
+82 silly audit   '@discordjs/collection': [ '1.5.3' ],
+82 silly audit   '@discordjs/formatters': [ '0.3.2' ],
+82 silly audit   '@discordjs/rest': [ '2.0.1' ],
+82 silly audit   '@discordjs/util': [ '1.0.1' ],
+82 silly audit   '@discordjs/ws': [ '1.0.1' ],
+82 silly audit   '@mapbox/node-pre-gyp': [ '1.0.11' ],
+82 silly audit   '@mongodb-js/saslprep': [ '1.1.0' ],
+82 silly audit   '@napi-rs/canvas': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-android-arm64': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-darwin-arm64': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-darwin-x64': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-linux-arm-gnueabihf': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-linux-arm64-gnu': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-linux-arm64-musl': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-linux-x64-gnu': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-linux-x64-musl': [ '0.1.44' ],
+82 silly audit   '@napi-rs/canvas-win32-x64-msvc': [ '0.1.44' ],
+82 silly audit   '@sapphire/async-queue': [ '1.5.0' ],
+82 silly audit   '@sapphire/shapeshift': [ '3.9.2' ],
+82 silly audit   '@sapphire/snowflake': [ '3.5.1' ],
+82 silly audit   '@skyra/gifenc': [ '1.0.1' ],
+82 silly audit   '@smithy/abort-controller': [ '2.0.9' ],
+82 silly audit   '@smithy/config-resolver': [ '2.0.10' ],
+82 silly audit   '@smithy/credential-provider-imds': [ '2.0.12' ],
+82 silly audit   '@smithy/eventstream-codec': [ '2.0.9' ],
+82 silly audit   '@smithy/fetch-http-handler': [ '2.1.5' ],
+82 silly audit   '@smithy/hash-node': [ '2.0.9' ],
+82 silly audit   '@smithy/invalid-dependency': [ '2.0.9' ],
+82 silly audit   '@smithy/is-array-buffer': [ '2.0.0' ],
+82 silly audit   '@smithy/middleware-content-length': [ '2.0.11' ],
+82 silly audit   '@smithy/middleware-endpoint': [ '2.0.9' ],
+82 silly audit   '@smithy/middleware-retry': [ '2.0.12' ],
+82 silly audit   '@smithy/middleware-serde': [ '2.0.9' ],
+82 silly audit   '@smithy/middleware-stack': [ '2.0.3' ],
+82 silly audit   '@smithy/node-config-provider': [ '2.0.12' ],
+82 silly audit   '@smithy/node-http-handler': [ '2.1.5' ],
+82 silly audit   '@smithy/property-provider': [ '2.0.10' ],
+82 silly audit   '@smithy/protocol-http': [ '3.0.5' ],
+82 silly audit   '@smithy/querystring-builder': [ '2.0.9' ],
+82 silly audit   '@smithy/querystring-parser': [ '2.0.9' ],
+82 silly audit   '@smithy/service-error-classification': [ '2.0.2' ],
+82 silly audit   '@smithy/shared-ini-file-loader': [ '2.0.11' ],
+82 silly audit   '@smithy/signature-v4': [ '2.0.9' ],
+82 silly audit   '@smithy/smithy-client': [ '2.1.7' ],
+82 silly audit   '@smithy/types': [ '2.3.3' ],
+82 silly audit   '@smithy/url-parser': [ '2.0.9' ],
+82 silly audit   '@smithy/util-base64': [ '2.0.0' ],
+82 silly audit   '@smithy/util-body-length-browser': [ '2.0.0' ],
+82 silly audit   '@smithy/util-body-length-node': [ '2.1.0' ],
+82 silly audit   '@smithy/util-buffer-from': [ '2.0.0' ],
+82 silly audit   '@smithy/util-config-provider': [ '2.0.0' ],
+82 silly audit   '@smithy/util-defaults-mode-browser': [ '2.0.11' ],
+82 silly audit   '@smithy/util-defaults-mode-node': [ '2.0.13' ],
+82 silly audit   '@smithy/util-hex-encoding': [ '2.0.0' ],
+82 silly audit   '@smithy/util-middleware': [ '2.0.2' ],
+82 silly audit   '@smithy/util-retry': [ '2.0.2' ],
+82 silly audit   '@smithy/util-stream': [ '2.0.12' ],
+82 silly audit   '@smithy/util-uri-escape': [ '2.0.0' ],
+82 silly audit   '@smithy/util-utf8': [ '2.0.0' ],
+82 silly audit   '@types/node': [ '20.7.0' ],
+82 silly audit   '@types/webidl-conversions': [ '7.0.1' ],
+82 silly audit   '@types/whatwg-url': [ '8.2.2' ],
+82 silly audit   '@types/ws': [ '8.5.6' ],
+82 silly audit   '@vladfrangu/async_event_emitter': [ '2.2.2' ],
+82 silly audit   abbrev: [ '1.1.1' ],
+82 silly audit   'agent-base': [ '6.0.2' ],
+82 silly audit   'ansi-regex': [ '5.0.1' ],
+82 silly audit   aproba: [ '2.0.0' ],
+82 silly audit   'are-we-there-yet': [ '2.0.0' ],
+82 silly audit   'balanced-match': [ '1.0.2' ],
+82 silly audit   'base64-js': [ '1.5.1' ],
+82 silly audit   bowser: [ '2.11.0' ],
+82 silly audit   'brace-expansion': [ '1.1.11' ],
+82 silly audit   bson: [ '4.7.2', '6.1.0' ],
+82 silly audit   buffer: [ '5.7.1' ],
+82 silly audit   busboy: [ '1.6.0' ],
+82 silly audit   canvacord: [ '5.4.10' ],
+82 silly audit   'node-fetch': [ '2.6.7', '2.7.0' ],
+82 silly audit   tr46: [ '0.0.3', '3.0.0' ],
+82 silly audit   'webidl-conversions': [ '3.0.1', '7.0.0' ],
+82 silly audit   'whatwg-url': [ '5.0.0', '11.0.0' ],
+82 silly audit   canvas: [ '2.11.2' ],
+82 silly audit   chalk: [ '5.3.0' ],
+82 silly audit   chownr: [ '2.0.0' ],
+82 silly audit   'color-support': [ '1.1.3' ],
+82 silly audit   'concat-map': [ '0.0.1' ],
+82 silly audit   'console-control-strings': [ '1.1.0' ],
+82 silly audit   debug: [ '4.3.4' ],
+82 silly audit   ms: [ '2.1.2', '2.1.3' ],
+82 silly audit   'decompress-response': [ '4.2.1' ],
+82 silly audit   delegates: [ '1.0.0' ],
+82 silly audit   'detect-libc': [ '2.0.2' ],
+82 silly audit   'discord-api-types': [ '0.37.50' ],
+82 silly audit   'discord.js': [ '14.13.0' ],
+82 silly audit   'emoji-regex': [ '8.0.0' ],
+82 silly audit   'fast-deep-equal': [ '3.1.3' ],
+82 silly audit   'fast-xml-parser': [ '4.2.5' ],
+82 silly audit   fs: [ '0.0.1-security' ],
+82 silly audit   'fs-minipass': [ '2.1.0' ],
+82 silly audit   minipass: [ '3.3.6', '5.0.0' ],
+82 silly audit   'fs.realpath': [ '1.0.0' ],
+82 silly audit   gauge: [ '3.0.2' ],
+82 silly audit   glob: [ '7.2.3' ],
+82 silly audit   'has-unicode': [ '2.0.1' ],
+82 silly audit   'https-proxy-agent': [ '5.0.1' ],
+82 silly audit   ieee754: [ '1.2.1' ],
+82 silly audit   inflight: [ '1.0.6' ],
+82 silly audit   inherits: [ '2.0.4' ],
+82 silly audit   ip: [ '2.0.0' ],
+82 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+82 silly audit   kareem: [ '2.5.1' ],
+82 silly audit   lodash: [ '4.17.21' ],
+82 silly audit   'lodash.snakecase': [ '4.1.1' ],
+82 silly audit   'lru-cache': [ '6.0.0' ],
+82 silly audit   'magic-bytes.js': [ '1.0.19' ],
+82 silly audit   'make-dir': [ '3.1.0' ],
+82 silly audit   semver: [ '6.3.1', '7.5.4' ],
+82 silly audit   'memory-pager': [ '1.5.0' ],
+82 silly audit   'mimic-response': [ '2.1.0' ],
+82 silly audit   minimatch: [ '3.1.2' ],
+82 silly audit   minizlib: [ '2.1.2' ],
+82 silly audit   mkdirp: [ '1.0.4' ],
+82 silly audit   moment: [ '2.29.4' ],
+82 silly audit   'moment-duration-format': [ '2.3.2' ],
+82 silly audit   mongodb: [ '6.1.0', '4.17.1' ],
+82 silly audit   'mongodb-connection-string-url': [ '2.6.0' ],
+82 silly audit   mongoose: [ '6.12.0' ],
+82 silly audit   mpath: [ '0.9.0' ],
+82 silly audit   mquery: [ '4.0.3' ],
+82 silly audit   nan: [ '2.18.0' ],
+82 silly audit   nopt: [ '5.0.0' ],
+82 silly audit   npmlog: [ '5.0.1' ],
+82 silly audit   'object-assign': [ '4.1.1' ],
+82 silly audit   once: [ '1.4.0' ],
+82 silly audit   'path-is-absolute': [ '1.0.1' ],
+82 silly audit   punycode: [ '2.3.0' ],
+82 silly audit   'readable-stream': [ '3.6.2' ],
+82 silly audit   rimraf: [ '3.0.2' ],
+82 silly audit   'safe-buffer': [ '5.2.1' ],
+82 silly audit   'set-blocking': [ '2.0.0' ],
+82 silly audit   sift: [ '16.0.1' ],
+82 silly audit   'signal-exit': [ '3.0.7' ],
+82 silly audit   'simple-concat': [ '1.0.1' ],
+82 silly audit   'simple-get': [ '3.1.1' ],
+82 silly audit   'smart-buffer': [ '4.2.0' ],
+82 silly audit   socks: [ '2.7.1' ],
+82 silly audit   'sparse-bitfield': [ '3.0.3' ],
+82 silly audit   streamsearch: [ '1.1.0' ],
+82 silly audit   string_decoder: [ '1.3.0' ],
+82 silly audit   'string-width': [ '4.2.3' ],
+82 silly audit   'strip-ansi': [ '6.0.1' ],
+82 silly audit   strnum: [ '1.0.5' ],
+82 silly audit   tar: [ '6.2.0' ],
+82 silly audit   'ts-mixer': [ '6.0.3' ],
+82 silly audit   undici: [ '5.22.1' ],
+82 silly audit   'util-deprecate': [ '1.0.2' ],
+82 silly audit   uuid: [ '8.3.2' ],
+82 silly audit   'wide-align': [ '1.1.5' ],
+82 silly audit   wrappy: [ '1.0.2' ],
+82 silly audit   ws: [ '8.14.2' ],
+82 silly audit   yallist: [ '4.0.0' ],
+82 silly audit   axios: [ '1.5.1' ],
+82 silly audit   'follow-redirects': [ '1.15.3' ],
+82 silly audit   'form-data': [ '4.0.0' ],
+82 silly audit   'proxy-from-env': [ '1.1.0' ],
+82 silly audit   asynckit: [ '0.4.0' ],
+82 silly audit   'combined-stream': [ '1.0.8' ],
+82 silly audit   'mime-types': [ '2.1.35' ],
+82 silly audit   'delayed-stream': [ '1.0.0' ],
+82 silly audit   'mime-db': [ '1.52.0' ]
+82 silly audit }
+83 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-win32-x64-msvc
+84 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-win32-x64-msvc' ]
+85 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-musl
+86 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-musl' ]
+87 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu
+88 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu' ]
+89 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf
+90 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf' ]
+91 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-x64
+92 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-x64' ]
+93 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-arm64
+94 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-arm64' ]
+95 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-android-arm64
+96 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-android-arm64' ]
+97 timing reifyNode:node_modules/@napi-rs/canvas-win32-x64-msvc Completed in 8ms
+98 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-musl Completed in 9ms
+99 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-gnu Completed in 8ms
+100 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm-gnueabihf Completed in 8ms
+101 timing reifyNode:node_modules/@napi-rs/canvas-darwin-x64 Completed in 8ms
+102 timing reifyNode:node_modules/@napi-rs/canvas-darwin-arm64 Completed in 8ms
+103 timing reifyNode:node_modules/@napi-rs/canvas-android-arm64 Completed in 8ms
+104 silly tarball no local data for mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz. Extracting by manifest.
+105 silly tarball no local data for mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz. Extracting by manifest.
+106 silly tarball no local data for asynckit@https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz. Extracting by manifest.
+107 silly tarball no local data for delayed-stream@https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz. Extracting by manifest.
+108 silly tarball no local data for combined-stream@https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz. Extracting by manifest.
+109 silly tarball no local data for proxy-from-env@https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz. Extracting by manifest.
+110 silly tarball no local data for form-data@https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz. Extracting by manifest.
+111 silly tarball no local data for axios@https://registry.npmjs.org/axios/-/axios-1.5.1.tgz. Extracting by manifest.
+112 silly tarball no local data for follow-redirects@https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz. Extracting by manifest.
+113 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 718ms
+114 timing auditReport:getReport Completed in 787ms
+115 silly audit report {}
+116 timing auditReport:init Completed in 0ms
+117 timing reify:audit Completed in 788ms
+118 http fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 901ms (cache miss)
+119 timing reifyNode:node_modules/mime-types Completed in 920ms
+120 http fetch GET 200 https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz 976ms (cache miss)
+121 timing reifyNode:node_modules/delayed-stream Completed in 997ms
+122 http fetch GET 200 https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz 980ms (cache miss)
+123 timing reifyNode:node_modules/combined-stream Completed in 1000ms
+124 http fetch GET 200 https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz 981ms (cache miss)
+125 timing reifyNode:node_modules/form-data Completed in 1001ms
+126 http fetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 986ms (cache miss)
+127 timing reifyNode:node_modules/mime-db Completed in 1004ms
+128 http fetch GET 200 https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz 983ms (cache miss)
+129 timing reifyNode:node_modules/proxy-from-env Completed in 1003ms
+130 http fetch GET 200 https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz 982ms (cache miss)
+131 timing reifyNode:node_modules/follow-redirects Completed in 1003ms
+132 http fetch GET 200 https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz 988ms (cache miss)
+133 timing reifyNode:node_modules/asynckit Completed in 1006ms
+134 timing reifyNode:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 1507ms
+135 http fetch GET 200 https://registry.npmjs.org/axios/-/axios-1.5.1.tgz 1505ms (cache miss)
+136 timing reifyNode:node_modules/axios Completed in 1526ms
+137 timing reify:unpack Completed in 1528ms
+138 timing reify:unretire Completed in 0ms
+139 timing build:queue Completed in 1ms
+140 info run @napi-rs/canvas-linux-x64-musl@0.1.44 install node_modules/@napi-rs/canvas-linux-x64-musl node install.js
+141 info run @napi-rs/canvas-linux-x64-musl@0.1.44 install { code: 1, signal: null }
+142 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-x64-musl
+143 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-x64-musl' ]
+144 timing build:run:install:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 269ms
+145 timing build:run:install Completed in 270ms
+146 timing build:deps Completed in 271ms
+147 timing build Completed in 272ms
+148 timing reify:build Completed in 272ms
+149 timing reify:trash Completed in 6ms
+150 timing reify:save Completed in 207ms
+151 timing reify Completed in 4170ms
+152 silly ADD node_modules/mime-db
+153 silly ADD node_modules/delayed-stream
+154 silly ADD node_modules/mime-types
+155 silly ADD node_modules/combined-stream
+156 silly ADD node_modules/asynckit
+157 silly ADD node_modules/proxy-from-env
+158 silly ADD node_modules/form-data
+159 silly ADD node_modules/follow-redirects
+160 silly ADD node_modules/axios
+161 silly ADD
+162 silly ADD
+163 silly ADD
+164 silly ADD
+165 silly ADD
+166 silly ADD
+167 silly ADD
+168 silly ADD
+169 timing command:i Completed in 4183ms
+170 verbose exit 0
+171 timing npm Completed in 4788ms
+172 info ok

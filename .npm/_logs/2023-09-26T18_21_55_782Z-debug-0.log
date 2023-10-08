@@ -1,0 +1,422 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.8.1
+2 info using node@v18.18.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/container/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 9ms
+16 timing npm:load:configload Completed in 9ms
+17 timing config:load:flatten Completed in 4ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm i canvacord
+21 verbose argv "i" "canvacord"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing npm:load:display Completed in 1ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-09-26T18_21_55_782Z-
+25 verbose logfile /home/container/.npm/_logs/2023-09-26T18_21_55_782Z-debug-0.log
+26 timing npm:load:logFile Completed in 11ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 204ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 508ms
+33 timing idealTree:userRequests Completed in 1ms
+34 silly idealTree buildDeps
+35 silly fetch manifest canvacord@*
+36 timing arborist:ctor Completed in 0ms
+37 http fetch GET 200 https://registry.npmjs.org/canvacord 583ms (cache miss)
+38 silly placeDep ROOT canvacord@5.4.10 OK for: container@1.0.0 want: *
+39 silly fetch manifest @napi-rs/canvas@^0.1.29
+40 silly fetch manifest @skyra/gifenc@^1.0.0
+41 silly fetch manifest chalk@^5.0.1
+42 silly fetch manifest moment@^2.29.4
+43 silly fetch manifest moment-duration-format@^2.3.2
+44 silly fetch manifest node-fetch@2.6.7
+45 http fetch GET 200 https://registry.npmjs.org/node-fetch 86ms (cache hit)
+46 http fetch GET 200 https://registry.npmjs.org/chalk 116ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/moment 119ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/moment-duration-format 454ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas 775ms (cache miss)
+50 http fetch GET 200 https://registry.npmjs.org/@skyra%2fgifenc 880ms (cache miss)
+51 timing idealTree:#root Completed in 1480ms
+52 silly fetch manifest encoding@^0.1.0
+53 http fetch GET 200 https://registry.npmjs.org/encoding 7ms (cache hit)
+54 silly placeDep ROOT @napi-rs/canvas@0.1.44 OK for: canvacord@5.4.10 want: ^0.1.29
+55 silly fetch manifest @napi-rs/canvas-win32-x64-msvc@0.1.44
+56 silly fetch manifest @napi-rs/canvas-darwin-x64@0.1.44
+57 silly fetch manifest @napi-rs/canvas-linux-x64-gnu@0.1.44
+58 silly fetch manifest @napi-rs/canvas-linux-arm-gnueabihf@0.1.44
+59 silly fetch manifest @napi-rs/canvas-linux-x64-musl@0.1.44
+60 silly fetch manifest @napi-rs/canvas-linux-arm64-gnu@0.1.44
+61 silly fetch manifest @napi-rs/canvas-linux-arm64-musl@0.1.44
+62 silly fetch manifest @napi-rs/canvas-darwin-arm64@0.1.44
+63 silly fetch manifest @napi-rs/canvas-android-arm64@0.1.44
+64 silly placeDep ROOT @skyra/gifenc@1.0.1 OK for: canvacord@5.4.10 want: ^1.0.0
+65 silly placeDep ROOT chalk@5.3.0 OK for: canvacord@5.4.10 want: ^5.0.1
+66 silly placeDep ROOT moment@2.29.4 OK for: canvacord@5.4.10 want: ^2.29.4
+67 silly placeDep ROOT moment-duration-format@2.3.2 OK for: canvacord@5.4.10 want: ^2.3.2
+68 silly placeDep node_modules/canvacord node-fetch@2.6.7 OK for: canvacord@5.4.10 want: 2.6.7
+69 silly fetch manifest whatwg-url@^5.0.0
+70 http fetch GET 200 https://registry.npmjs.org/whatwg-url 85ms (cache hit)
+71 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-musl 557ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-x64 581ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-gnu 666ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-x64-gnu 814ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-win32-x64-msvc 891ms (cache miss)
+76 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-android-arm64 902ms (cache miss)
+77 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm64-musl 945ms (cache miss)
+78 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-darwin-arm64 988ms (cache miss)
+79 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2fcanvas-linux-arm-gnueabihf 1056ms (cache miss)
+80 timing idealTree:node_modules/canvacord Completed in 1076ms
+81 silly placeDep ROOT @napi-rs/canvas-android-arm64@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+82 silly placeDep ROOT @napi-rs/canvas-darwin-arm64@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+83 silly placeDep ROOT @napi-rs/canvas-darwin-x64@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+84 silly placeDep ROOT @napi-rs/canvas-linux-arm-gnueabihf@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+85 silly placeDep ROOT @napi-rs/canvas-linux-arm64-gnu@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+86 silly placeDep ROOT @napi-rs/canvas-linux-arm64-musl@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+87 silly placeDep ROOT @napi-rs/canvas-linux-x64-gnu@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+88 silly placeDep ROOT @napi-rs/canvas-linux-x64-musl@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+89 silly placeDep ROOT @napi-rs/canvas-win32-x64-msvc@0.1.44 OK for: @napi-rs/canvas@0.1.44 want: 0.1.44
+90 timing idealTree:node_modules/@napi-rs/canvas Completed in 16ms
+91 timing idealTree:node_modules/@napi-rs/canvas-android-arm64 Completed in 0ms
+92 timing idealTree:node_modules/@napi-rs/canvas-darwin-arm64 Completed in 0ms
+93 timing idealTree:node_modules/@napi-rs/canvas-darwin-x64 Completed in 1ms
+94 timing idealTree:node_modules/@napi-rs/canvas-linux-arm-gnueabihf Completed in 0ms
+95 timing idealTree:node_modules/@napi-rs/canvas-linux-arm64-gnu Completed in 0ms
+96 timing idealTree:node_modules/@napi-rs/canvas-linux-arm64-musl Completed in 0ms
+97 timing idealTree:node_modules/@napi-rs/canvas-linux-x64-gnu Completed in 0ms
+98 timing idealTree:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 0ms
+99 timing idealTree:node_modules/@napi-rs/canvas-win32-x64-msvc Completed in 0ms
+100 timing idealTree:node_modules/@skyra/gifenc Completed in 0ms
+101 timing idealTree:node_modules/chalk Completed in 0ms
+102 timing idealTree:node_modules/moment Completed in 0ms
+103 timing idealTree:node_modules/moment-duration-format Completed in 0ms
+104 silly placeDep node_modules/canvacord whatwg-url@5.0.0 OK for: node-fetch@2.6.7 want: ^5.0.0
+105 silly fetch manifest tr46@~0.0.3
+106 silly fetch manifest webidl-conversions@^3.0.0
+107 http fetch GET 200 https://registry.npmjs.org/tr46 9ms (cache hit)
+108 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 10ms (cache hit)
+109 timing idealTree:node_modules/canvacord/node_modules/node-fetch Completed in 15ms
+110 silly placeDep node_modules/canvacord tr46@0.0.3 OK for: whatwg-url@5.0.0 want: ~0.0.3
+111 silly placeDep node_modules/canvacord webidl-conversions@3.0.1 OK for: whatwg-url@5.0.0 want: ^3.0.0
+112 timing idealTree:node_modules/canvacord/node_modules/whatwg-url Completed in 4ms
+113 timing idealTree:node_modules/canvacord/node_modules/tr46 Completed in 0ms
+114 timing idealTree:node_modules/canvacord/node_modules/webidl-conversions Completed in 0ms
+115 timing idealTree:buildDeps Completed in 2593ms
+116 timing idealTree:fixDepFlags Completed in 3ms
+117 timing idealTree Completed in 3111ms
+118 timing reify:loadTrees Completed in 3113ms
+119 timing reify:diffTrees Completed in 8ms
+120 silly reify moves {}
+121 timing reify:retireShallow Completed in 2ms
+122 timing reify:createSparse Completed in 70ms
+123 timing reify:loadBundles Completed in 0ms
+124 silly audit bulk request {
+124 silly audit   '@aws-crypto/crc32': [ '3.0.0' ],
+124 silly audit   tslib: [ '1.14.1', '2.6.2' ],
+124 silly audit   '@aws-crypto/ie11-detection': [ '3.0.0' ],
+124 silly audit   '@aws-crypto/sha256-browser': [ '3.0.0' ],
+124 silly audit   '@aws-crypto/sha256-js': [ '3.0.0' ],
+124 silly audit   '@aws-crypto/supports-web-crypto': [ '3.0.0' ],
+124 silly audit   '@aws-crypto/util': [ '3.0.0' ],
+124 silly audit   '@aws-sdk/client-cognito-identity': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/client-sso': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/client-sts': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-provider-cognito-identity': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-provider-env': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-provider-ini': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-provider-node': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-provider-process': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-provider-sso': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-provider-web-identity': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/credential-providers': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/middleware-host-header': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/middleware-logger': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/middleware-recursion-detection': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/middleware-sdk-sts': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/middleware-signing': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/middleware-user-agent': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/region-config-resolver': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/token-providers': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/types': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/util-endpoints': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/util-locate-window': [ '3.310.0' ],
+124 silly audit   '@aws-sdk/util-user-agent-browser': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/util-user-agent-node': [ '3.418.0' ],
+124 silly audit   '@aws-sdk/util-utf8-browser': [ '3.259.0' ],
+124 silly audit   '@discordjs/builders': [ '1.6.5' ],
+124 silly audit   '@discordjs/collection': [ '1.5.3' ],
+124 silly audit   '@discordjs/formatters': [ '0.3.2' ],
+124 silly audit   '@discordjs/rest': [ '2.0.1' ],
+124 silly audit   '@discordjs/util': [ '1.0.1' ],
+124 silly audit   '@discordjs/ws': [ '1.0.1' ],
+124 silly audit   '@mapbox/node-pre-gyp': [ '1.0.11' ],
+124 silly audit   '@mongodb-js/saslprep': [ '1.1.0' ],
+124 silly audit   '@sapphire/async-queue': [ '1.5.0' ],
+124 silly audit   '@sapphire/shapeshift': [ '3.9.2' ],
+124 silly audit   '@sapphire/snowflake': [ '3.5.1' ],
+124 silly audit   '@smithy/abort-controller': [ '2.0.9' ],
+124 silly audit   '@smithy/config-resolver': [ '2.0.10' ],
+124 silly audit   '@smithy/credential-provider-imds': [ '2.0.12' ],
+124 silly audit   '@smithy/eventstream-codec': [ '2.0.9' ],
+124 silly audit   '@smithy/fetch-http-handler': [ '2.1.5' ],
+124 silly audit   '@smithy/hash-node': [ '2.0.9' ],
+124 silly audit   '@smithy/invalid-dependency': [ '2.0.9' ],
+124 silly audit   '@smithy/is-array-buffer': [ '2.0.0' ],
+124 silly audit   '@smithy/middleware-content-length': [ '2.0.11' ],
+124 silly audit   '@smithy/middleware-endpoint': [ '2.0.9' ],
+124 silly audit   '@smithy/middleware-retry': [ '2.0.12' ],
+124 silly audit   '@smithy/middleware-serde': [ '2.0.9' ],
+124 silly audit   '@smithy/middleware-stack': [ '2.0.3' ],
+124 silly audit   '@smithy/node-config-provider': [ '2.0.12' ],
+124 silly audit   '@smithy/node-http-handler': [ '2.1.5' ],
+124 silly audit   '@smithy/property-provider': [ '2.0.10' ],
+124 silly audit   '@smithy/protocol-http': [ '3.0.5' ],
+124 silly audit   '@smithy/querystring-builder': [ '2.0.9' ],
+124 silly audit   '@smithy/querystring-parser': [ '2.0.9' ],
+124 silly audit   '@smithy/service-error-classification': [ '2.0.2' ],
+124 silly audit   '@smithy/shared-ini-file-loader': [ '2.0.11' ],
+124 silly audit   '@smithy/signature-v4': [ '2.0.9' ],
+124 silly audit   '@smithy/smithy-client': [ '2.1.7' ],
+124 silly audit   '@smithy/types': [ '2.3.3' ],
+124 silly audit   '@smithy/url-parser': [ '2.0.9' ],
+124 silly audit   '@smithy/util-base64': [ '2.0.0' ],
+124 silly audit   '@smithy/util-body-length-browser': [ '2.0.0' ],
+124 silly audit   '@smithy/util-body-length-node': [ '2.1.0' ],
+124 silly audit   '@smithy/util-buffer-from': [ '2.0.0' ],
+124 silly audit   '@smithy/util-config-provider': [ '2.0.0' ],
+124 silly audit   '@smithy/util-defaults-mode-browser': [ '2.0.11' ],
+124 silly audit   '@smithy/util-defaults-mode-node': [ '2.0.13' ],
+124 silly audit   '@smithy/util-hex-encoding': [ '2.0.0' ],
+124 silly audit   '@smithy/util-middleware': [ '2.0.2' ],
+124 silly audit   '@smithy/util-retry': [ '2.0.2' ],
+124 silly audit   '@smithy/util-stream': [ '2.0.12' ],
+124 silly audit   '@smithy/util-uri-escape': [ '2.0.0' ],
+124 silly audit   '@smithy/util-utf8': [ '2.0.0' ],
+124 silly audit   '@types/node': [ '20.7.0' ],
+124 silly audit   '@types/webidl-conversions': [ '7.0.1' ],
+124 silly audit   '@types/whatwg-url': [ '8.2.2' ],
+124 silly audit   '@types/ws': [ '8.5.6' ],
+124 silly audit   '@vladfrangu/async_event_emitter': [ '2.2.2' ],
+124 silly audit   abbrev: [ '1.1.1' ],
+124 silly audit   'agent-base': [ '6.0.2' ],
+124 silly audit   'ansi-regex': [ '5.0.1' ],
+124 silly audit   aproba: [ '2.0.0' ],
+124 silly audit   'are-we-there-yet': [ '2.0.0' ],
+124 silly audit   'balanced-match': [ '1.0.2' ],
+124 silly audit   'base64-js': [ '1.5.1' ],
+124 silly audit   bowser: [ '2.11.0' ],
+124 silly audit   'brace-expansion': [ '1.1.11' ],
+124 silly audit   bson: [ '4.7.2', '6.1.0' ],
+124 silly audit   buffer: [ '5.7.1' ],
+124 silly audit   busboy: [ '1.6.0' ],
+124 silly audit   canvas: [ '2.11.2' ],
+124 silly audit   chownr: [ '2.0.0' ],
+124 silly audit   'color-support': [ '1.1.3' ],
+124 silly audit   'concat-map': [ '0.0.1' ],
+124 silly audit   'console-control-strings': [ '1.1.0' ],
+124 silly audit   debug: [ '4.3.4' ],
+124 silly audit   ms: [ '2.1.2', '2.1.3' ],
+124 silly audit   'decompress-response': [ '4.2.1' ],
+124 silly audit   delegates: [ '1.0.0' ],
+124 silly audit   'detect-libc': [ '2.0.2' ],
+124 silly audit   'discord-api-types': [ '0.37.50' ],
+124 silly audit   'discord.js': [ '14.13.0' ],
+124 silly audit   'emoji-regex': [ '8.0.0' ],
+124 silly audit   'fast-deep-equal': [ '3.1.3' ],
+124 silly audit   'fast-xml-parser': [ '4.2.5' ],
+124 silly audit   'fs-minipass': [ '2.1.0' ],
+124 silly audit   minipass: [ '3.3.6', '5.0.0' ],
+124 silly audit   'fs.realpath': [ '1.0.0' ],
+124 silly audit   gauge: [ '3.0.2' ],
+124 silly audit   glob: [ '7.2.3' ],
+124 silly audit   'has-unicode': [ '2.0.1' ],
+124 silly audit   'https-proxy-agent': [ '5.0.1' ],
+124 silly audit   ieee754: [ '1.2.1' ],
+124 silly audit   inflight: [ '1.0.6' ],
+124 silly audit   inherits: [ '2.0.4' ],
+124 silly audit   ip: [ '2.0.0' ],
+124 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+124 silly audit   kareem: [ '2.5.1' ],
+124 silly audit   lodash: [ '4.17.21' ],
+124 silly audit   'lodash.snakecase': [ '4.1.1' ],
+124 silly audit   'lru-cache': [ '6.0.0' ],
+124 silly audit   'magic-bytes.js': [ '1.0.19' ],
+124 silly audit   'make-dir': [ '3.1.0' ],
+124 silly audit   semver: [ '6.3.1', '7.5.4' ],
+124 silly audit   'memory-pager': [ '1.5.0' ],
+124 silly audit   'mimic-response': [ '2.1.0' ],
+124 silly audit   minimatch: [ '3.1.2' ],
+124 silly audit   minizlib: [ '2.1.2' ],
+124 silly audit   mkdirp: [ '1.0.4' ],
+124 silly audit   mongodb: [ '6.1.0', '4.17.1' ],
+124 silly audit   'mongodb-connection-string-url': [ '2.6.0' ],
+124 silly audit   mongoose: [ '6.12.0' ],
+124 silly audit   mpath: [ '0.9.0' ],
+124 silly audit   mquery: [ '4.0.3' ],
+124 silly audit   nan: [ '2.18.0' ],
+124 silly audit   'node-fetch': [ '2.7.0', '2.6.7' ],
+124 silly audit   tr46: [ '0.0.3', '3.0.0' ],
+124 silly audit   'webidl-conversions': [ '3.0.1', '7.0.0' ],
+124 silly audit   'whatwg-url': [ '5.0.0', '11.0.0' ],
+124 silly audit   nopt: [ '5.0.0' ],
+124 silly audit   npmlog: [ '5.0.1' ],
+124 silly audit   'object-assign': [ '4.1.1' ],
+124 silly audit   once: [ '1.4.0' ],
+124 silly audit   'path-is-absolute': [ '1.0.1' ],
+124 silly audit   punycode: [ '2.3.0' ],
+124 silly audit   'readable-stream': [ '3.6.2' ],
+124 silly audit   rimraf: [ '3.0.2' ],
+124 silly audit   'safe-buffer': [ '5.2.1' ],
+124 silly audit   'set-blocking': [ '2.0.0' ],
+124 silly audit   sift: [ '16.0.1' ],
+124 silly audit   'signal-exit': [ '3.0.7' ],
+124 silly audit   'simple-concat': [ '1.0.1' ],
+124 silly audit   'simple-get': [ '3.1.1' ],
+124 silly audit   'smart-buffer': [ '4.2.0' ],
+124 silly audit   socks: [ '2.7.1' ],
+124 silly audit   'sparse-bitfield': [ '3.0.3' ],
+124 silly audit   streamsearch: [ '1.1.0' ],
+124 silly audit   string_decoder: [ '1.3.0' ],
+124 silly audit   'string-width': [ '4.2.3' ],
+124 silly audit   'strip-ansi': [ '6.0.1' ],
+124 silly audit   strnum: [ '1.0.5' ],
+124 silly audit   tar: [ '6.2.0' ],
+124 silly audit   'ts-mixer': [ '6.0.3' ],
+124 silly audit   undici: [ '5.22.1' ],
+124 silly audit   'util-deprecate': [ '1.0.2' ],
+124 silly audit   uuid: [ '8.3.2' ],
+124 silly audit   'wide-align': [ '1.1.5' ],
+124 silly audit   wrappy: [ '1.0.2' ],
+124 silly audit   ws: [ '8.14.2' ],
+124 silly audit   yallist: [ '4.0.0' ],
+124 silly audit   canvacord: [ '5.4.10' ],
+124 silly audit   '@napi-rs/canvas': [ '0.1.44' ],
+124 silly audit   '@skyra/gifenc': [ '1.0.1' ],
+124 silly audit   chalk: [ '5.3.0' ],
+124 silly audit   moment: [ '2.29.4' ],
+124 silly audit   'moment-duration-format': [ '2.3.2' ],
+124 silly audit   '@napi-rs/canvas-android-arm64': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-darwin-arm64': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-darwin-x64': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-linux-arm-gnueabihf': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-linux-arm64-gnu': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-linux-arm64-musl': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-linux-x64-gnu': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-linux-x64-musl': [ '0.1.44' ],
+124 silly audit   '@napi-rs/canvas-win32-x64-msvc': [ '0.1.44' ]
+124 silly audit }
+125 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-win32-x64-msvc
+126 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-win32-x64-msvc' ]
+127 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-musl
+128 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-musl' ]
+129 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu
+130 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu' ]
+131 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf
+132 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf' ]
+133 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-x64
+134 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-x64' ]
+135 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-arm64
+136 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-arm64' ]
+137 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-android-arm64
+138 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-android-arm64' ]
+139 timing reifyNode:node_modules/@napi-rs/canvas-win32-x64-msvc Completed in 11ms
+140 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-musl Completed in 11ms
+141 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-gnu Completed in 11ms
+142 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm-gnueabihf Completed in 10ms
+143 timing reifyNode:node_modules/@napi-rs/canvas-darwin-x64 Completed in 10ms
+144 timing reifyNode:node_modules/@napi-rs/canvas-darwin-arm64 Completed in 10ms
+145 timing reifyNode:node_modules/@napi-rs/canvas-android-arm64 Completed in 10ms
+146 silly tarball no local data for @napi-rs/canvas-linux-x64-musl@https://registry.npmjs.org/@napi-rs/canvas-linux-x64-musl/-/canvas-linux-x64-musl-0.1.44.tgz. Extracting by manifest.
+147 silly tarball no local data for moment-duration-format@https://registry.npmjs.org/moment-duration-format/-/moment-duration-format-2.3.2.tgz. Extracting by manifest.
+148 silly tarball no local data for moment@https://registry.npmjs.org/moment/-/moment-2.29.4.tgz. Extracting by manifest.
+149 silly tarball no local data for chalk@https://registry.npmjs.org/chalk/-/chalk-5.3.0.tgz. Extracting by manifest.
+150 silly tarball no local data for @skyra/gifenc@https://registry.npmjs.org/@skyra/gifenc/-/gifenc-1.0.1.tgz. Extracting by manifest.
+151 silly tarball no local data for @napi-rs/canvas@https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.44.tgz. Extracting by manifest.
+152 silly tarball no local data for canvacord@https://registry.npmjs.org/canvacord/-/canvacord-5.4.10.tgz. Extracting by manifest.
+153 silly tarball no local data for @napi-rs/canvas-linux-x64-gnu@https://registry.npmjs.org/@napi-rs/canvas-linux-x64-gnu/-/canvas-linux-x64-gnu-0.1.44.tgz. Extracting by manifest.
+154 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz. Extracting by manifest.
+155 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 214ms
+156 timing auditReport:getReport Completed in 219ms
+157 silly audit report {}
+158 timing auditReport:init Completed in 0ms
+159 timing reify:audit Completed in 221ms
+160 timing reifyNode:node_modules/canvacord/node_modules/webidl-conversions Completed in 516ms
+161 timing reifyNode:node_modules/canvacord/node_modules/whatwg-url Completed in 900ms
+162 timing reifyNode:node_modules/canvacord/node_modules/tr46 Completed in 1000ms
+163 http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-5.3.0.tgz 922ms (cache miss)
+164 timing reifyNode:node_modules/chalk Completed in 1088ms
+165 http fetch GET 200 https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.44.tgz 1000ms (cache miss)
+166 timing reifyNode:node_modules/@napi-rs/canvas Completed in 1092ms
+167 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz 1100ms (cache miss)
+168 timing reifyNode:node_modules/canvacord/node_modules/node-fetch Completed in 1198ms
+169 http fetch GET 200 https://registry.npmjs.org/@skyra/gifenc/-/gifenc-1.0.1.tgz 1109ms (cache miss)
+170 timing reifyNode:node_modules/@skyra/gifenc Completed in 1199ms
+171 http fetch GET 200 https://registry.npmjs.org/moment-duration-format/-/moment-duration-format-2.3.2.tgz 1193ms (cache miss)
+172 timing reifyNode:node_modules/moment-duration-format Completed in 1216ms
+173 http fetch GET 200 https://registry.npmjs.org/canvacord/-/canvacord-5.4.10.tgz 1294ms (cache miss)
+174 timing reifyNode:node_modules/canvacord Completed in 1389ms
+175 http fetch GET 200 https://registry.npmjs.org/moment/-/moment-2.29.4.tgz 2722ms (cache miss)
+176 timing reifyNode:node_modules/moment Completed in 2809ms
+177 http fetch GET 200 https://registry.npmjs.org/@napi-rs/canvas-linux-x64-gnu/-/canvas-linux-x64-gnu-0.1.44.tgz 4012ms (cache miss)
+178 timing reifyNode:node_modules/@napi-rs/canvas-linux-x64-gnu Completed in 4111ms
+179 http fetch GET 200 https://registry.npmjs.org/@napi-rs/canvas-linux-x64-musl/-/canvas-linux-x64-musl-0.1.44.tgz 4885ms (cache miss)
+180 timing reifyNode:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 4908ms
+181 timing reify:unpack Completed in 4908ms
+182 timing reify:unretire Completed in 0ms
+183 timing build:queue Completed in 2ms
+184 timing build:link:node_modules/canvacord Completed in 2ms
+185 timing build:link Completed in 2ms
+186 info run @napi-rs/canvas-linux-x64-gnu@0.1.44 install node_modules/@napi-rs/canvas-linux-x64-gnu node install.js
+187 info run @napi-rs/canvas-linux-x64-musl@0.1.44 install node_modules/@napi-rs/canvas-linux-x64-musl node install.js
+188 info run @napi-rs/canvas-linux-x64-gnu@0.1.44 install { code: 0, signal: null }
+189 timing build:run:install:node_modules/@napi-rs/canvas-linux-x64-gnu Completed in 286ms
+190 info run @napi-rs/canvas-linux-x64-musl@0.1.44 install { code: 1, signal: null }
+191 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-x64-musl
+192 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-x64-musl' ]
+193 timing build:run:install:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 306ms
+194 timing build:run:install Completed in 383ms
+195 info run canvacord@5.4.10 postinstall node_modules/canvacord node scripts/postinstall.mjs
+196 info run canvacord@5.4.10 postinstall { code: 0, signal: null }
+197 timing build:run:postinstall:node_modules/canvacord Completed in 2191ms
+198 timing build:run:postinstall Completed in 2191ms
+199 timing build:deps Completed in 2578ms
+200 timing build Completed in 2579ms
+201 timing reify:build Completed in 2579ms
+202 timing reify:trash Completed in 11ms
+203 timing reify:save Completed in 288ms
+204 timing reify Completed in 11114ms
+205 silly ADD
+206 silly ADD
+207 silly ADD node_modules/@napi-rs/canvas-linux-x64-gnu
+208 silly ADD
+209 silly ADD
+210 silly ADD
+211 silly ADD
+212 silly ADD
+213 silly ADD
+214 silly ADD node_modules/moment-duration-format
+215 silly ADD node_modules/moment
+216 silly ADD node_modules/chalk
+217 silly ADD node_modules/@skyra/gifenc
+218 silly ADD node_modules/@napi-rs/canvas
+219 silly ADD node_modules/canvacord
+220 silly ADD node_modules/canvacord/node_modules/webidl-conversions
+221 silly ADD node_modules/canvacord/node_modules/tr46
+222 silly ADD node_modules/canvacord/node_modules/whatwg-url
+223 silly ADD node_modules/canvacord/node_modules/node-fetch
+224 timing command:i Completed in 11185ms
+225 verbose exit 0
+226 timing npm Completed in 11908ms
+227 info ok

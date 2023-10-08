@@ -1,0 +1,304 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.8.1
+2 info using node@v18.18.0
+3 timing npm:load:whichnode Completed in 56ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/container/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 9ms
+16 timing npm:load:configload Completed in 9ms
+17 timing config:load:flatten Completed in 3ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm i fs
+21 verbose argv "i" "fs"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-09-26T18_22_08_509Z-
+25 verbose logfile /home/container/.npm/_logs/2023-09-26T18_22_08_509Z-debug-0.log
+26 timing npm:load:logFile Completed in 14ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 189ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 586ms
+33 timing idealTree:userRequests Completed in 1ms
+34 silly idealTree buildDeps
+35 silly fetch manifest fs@*
+36 timing arborist:ctor Completed in 1ms
+37 http fetch GET 200 https://registry.npmjs.org/fs 509ms (cache miss)
+38 silly placeDep ROOT fs@0.0.1-security OK for: container@1.0.0 want: *
+39 timing idealTree:#root Completed in 517ms
+40 timing idealTree:node_modules/fs Completed in 0ms
+41 timing idealTree:buildDeps Completed in 518ms
+42 timing idealTree:fixDepFlags Completed in 4ms
+43 timing idealTree Completed in 1116ms
+44 timing reify:loadTrees Completed in 1118ms
+45 timing reify:diffTrees Completed in 63ms
+46 silly reify moves {}
+47 timing reify:retireShallow Completed in 2ms
+48 timing reify:createSparse Completed in 3ms
+49 timing reify:loadBundles Completed in 0ms
+50 silly audit bulk request {
+50 silly audit   '@aws-crypto/crc32': [ '3.0.0' ],
+50 silly audit   tslib: [ '1.14.1', '2.6.2' ],
+50 silly audit   '@aws-crypto/ie11-detection': [ '3.0.0' ],
+50 silly audit   '@aws-crypto/sha256-browser': [ '3.0.0' ],
+50 silly audit   '@aws-crypto/sha256-js': [ '3.0.0' ],
+50 silly audit   '@aws-crypto/supports-web-crypto': [ '3.0.0' ],
+50 silly audit   '@aws-crypto/util': [ '3.0.0' ],
+50 silly audit   '@aws-sdk/client-cognito-identity': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/client-sso': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/client-sts': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-provider-cognito-identity': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-provider-env': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-provider-ini': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-provider-node': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-provider-process': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-provider-sso': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-provider-web-identity': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/credential-providers': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/middleware-host-header': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/middleware-logger': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/middleware-recursion-detection': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/middleware-sdk-sts': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/middleware-signing': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/middleware-user-agent': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/region-config-resolver': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/token-providers': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/types': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/util-endpoints': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/util-locate-window': [ '3.310.0' ],
+50 silly audit   '@aws-sdk/util-user-agent-browser': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/util-user-agent-node': [ '3.418.0' ],
+50 silly audit   '@aws-sdk/util-utf8-browser': [ '3.259.0' ],
+50 silly audit   '@discordjs/builders': [ '1.6.5' ],
+50 silly audit   '@discordjs/collection': [ '1.5.3' ],
+50 silly audit   '@discordjs/formatters': [ '0.3.2' ],
+50 silly audit   '@discordjs/rest': [ '2.0.1' ],
+50 silly audit   '@discordjs/util': [ '1.0.1' ],
+50 silly audit   '@discordjs/ws': [ '1.0.1' ],
+50 silly audit   '@mapbox/node-pre-gyp': [ '1.0.11' ],
+50 silly audit   '@mongodb-js/saslprep': [ '1.1.0' ],
+50 silly audit   '@napi-rs/canvas': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-android-arm64': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-darwin-arm64': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-darwin-x64': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-linux-arm-gnueabihf': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-linux-arm64-gnu': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-linux-arm64-musl': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-linux-x64-gnu': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-linux-x64-musl': [ '0.1.44' ],
+50 silly audit   '@napi-rs/canvas-win32-x64-msvc': [ '0.1.44' ],
+50 silly audit   '@sapphire/async-queue': [ '1.5.0' ],
+50 silly audit   '@sapphire/shapeshift': [ '3.9.2' ],
+50 silly audit   '@sapphire/snowflake': [ '3.5.1' ],
+50 silly audit   '@skyra/gifenc': [ '1.0.1' ],
+50 silly audit   '@smithy/abort-controller': [ '2.0.9' ],
+50 silly audit   '@smithy/config-resolver': [ '2.0.10' ],
+50 silly audit   '@smithy/credential-provider-imds': [ '2.0.12' ],
+50 silly audit   '@smithy/eventstream-codec': [ '2.0.9' ],
+50 silly audit   '@smithy/fetch-http-handler': [ '2.1.5' ],
+50 silly audit   '@smithy/hash-node': [ '2.0.9' ],
+50 silly audit   '@smithy/invalid-dependency': [ '2.0.9' ],
+50 silly audit   '@smithy/is-array-buffer': [ '2.0.0' ],
+50 silly audit   '@smithy/middleware-content-length': [ '2.0.11' ],
+50 silly audit   '@smithy/middleware-endpoint': [ '2.0.9' ],
+50 silly audit   '@smithy/middleware-retry': [ '2.0.12' ],
+50 silly audit   '@smithy/middleware-serde': [ '2.0.9' ],
+50 silly audit   '@smithy/middleware-stack': [ '2.0.3' ],
+50 silly audit   '@smithy/node-config-provider': [ '2.0.12' ],
+50 silly audit   '@smithy/node-http-handler': [ '2.1.5' ],
+50 silly audit   '@smithy/property-provider': [ '2.0.10' ],
+50 silly audit   '@smithy/protocol-http': [ '3.0.5' ],
+50 silly audit   '@smithy/querystring-builder': [ '2.0.9' ],
+50 silly audit   '@smithy/querystring-parser': [ '2.0.9' ],
+50 silly audit   '@smithy/service-error-classification': [ '2.0.2' ],
+50 silly audit   '@smithy/shared-ini-file-loader': [ '2.0.11' ],
+50 silly audit   '@smithy/signature-v4': [ '2.0.9' ],
+50 silly audit   '@smithy/smithy-client': [ '2.1.7' ],
+50 silly audit   '@smithy/types': [ '2.3.3' ],
+50 silly audit   '@smithy/url-parser': [ '2.0.9' ],
+50 silly audit   '@smithy/util-base64': [ '2.0.0' ],
+50 silly audit   '@smithy/util-body-length-browser': [ '2.0.0' ],
+50 silly audit   '@smithy/util-body-length-node': [ '2.1.0' ],
+50 silly audit   '@smithy/util-buffer-from': [ '2.0.0' ],
+50 silly audit   '@smithy/util-config-provider': [ '2.0.0' ],
+50 silly audit   '@smithy/util-defaults-mode-browser': [ '2.0.11' ],
+50 silly audit   '@smithy/util-defaults-mode-node': [ '2.0.13' ],
+50 silly audit   '@smithy/util-hex-encoding': [ '2.0.0' ],
+50 silly audit   '@smithy/util-middleware': [ '2.0.2' ],
+50 silly audit   '@smithy/util-retry': [ '2.0.2' ],
+50 silly audit   '@smithy/util-stream': [ '2.0.12' ],
+50 silly audit   '@smithy/util-uri-escape': [ '2.0.0' ],
+50 silly audit   '@smithy/util-utf8': [ '2.0.0' ],
+50 silly audit   '@types/node': [ '20.7.0' ],
+50 silly audit   '@types/webidl-conversions': [ '7.0.1' ],
+50 silly audit   '@types/whatwg-url': [ '8.2.2' ],
+50 silly audit   '@types/ws': [ '8.5.6' ],
+50 silly audit   '@vladfrangu/async_event_emitter': [ '2.2.2' ],
+50 silly audit   abbrev: [ '1.1.1' ],
+50 silly audit   'agent-base': [ '6.0.2' ],
+50 silly audit   'ansi-regex': [ '5.0.1' ],
+50 silly audit   aproba: [ '2.0.0' ],
+50 silly audit   'are-we-there-yet': [ '2.0.0' ],
+50 silly audit   'balanced-match': [ '1.0.2' ],
+50 silly audit   'base64-js': [ '1.5.1' ],
+50 silly audit   bowser: [ '2.11.0' ],
+50 silly audit   'brace-expansion': [ '1.1.11' ],
+50 silly audit   bson: [ '4.7.2', '6.1.0' ],
+50 silly audit   buffer: [ '5.7.1' ],
+50 silly audit   busboy: [ '1.6.0' ],
+50 silly audit   canvacord: [ '5.4.10' ],
+50 silly audit   'node-fetch': [ '2.6.7', '2.7.0' ],
+50 silly audit   tr46: [ '0.0.3', '3.0.0' ],
+50 silly audit   'webidl-conversions': [ '3.0.1', '7.0.0' ],
+50 silly audit   'whatwg-url': [ '5.0.0', '11.0.0' ],
+50 silly audit   canvas: [ '2.11.2' ],
+50 silly audit   chalk: [ '5.3.0' ],
+50 silly audit   chownr: [ '2.0.0' ],
+50 silly audit   'color-support': [ '1.1.3' ],
+50 silly audit   'concat-map': [ '0.0.1' ],
+50 silly audit   'console-control-strings': [ '1.1.0' ],
+50 silly audit   debug: [ '4.3.4' ],
+50 silly audit   ms: [ '2.1.2', '2.1.3' ],
+50 silly audit   'decompress-response': [ '4.2.1' ],
+50 silly audit   delegates: [ '1.0.0' ],
+50 silly audit   'detect-libc': [ '2.0.2' ],
+50 silly audit   'discord-api-types': [ '0.37.50' ],
+50 silly audit   'discord.js': [ '14.13.0' ],
+50 silly audit   'emoji-regex': [ '8.0.0' ],
+50 silly audit   'fast-deep-equal': [ '3.1.3' ],
+50 silly audit   'fast-xml-parser': [ '4.2.5' ],
+50 silly audit   'fs-minipass': [ '2.1.0' ],
+50 silly audit   minipass: [ '3.3.6', '5.0.0' ],
+50 silly audit   'fs.realpath': [ '1.0.0' ],
+50 silly audit   gauge: [ '3.0.2' ],
+50 silly audit   glob: [ '7.2.3' ],
+50 silly audit   'has-unicode': [ '2.0.1' ],
+50 silly audit   'https-proxy-agent': [ '5.0.1' ],
+50 silly audit   ieee754: [ '1.2.1' ],
+50 silly audit   inflight: [ '1.0.6' ],
+50 silly audit   inherits: [ '2.0.4' ],
+50 silly audit   ip: [ '2.0.0' ],
+50 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+50 silly audit   kareem: [ '2.5.1' ],
+50 silly audit   lodash: [ '4.17.21' ],
+50 silly audit   'lodash.snakecase': [ '4.1.1' ],
+50 silly audit   'lru-cache': [ '6.0.0' ],
+50 silly audit   'magic-bytes.js': [ '1.0.19' ],
+50 silly audit   'make-dir': [ '3.1.0' ],
+50 silly audit   semver: [ '6.3.1', '7.5.4' ],
+50 silly audit   'memory-pager': [ '1.5.0' ],
+50 silly audit   'mimic-response': [ '2.1.0' ],
+50 silly audit   minimatch: [ '3.1.2' ],
+50 silly audit   minizlib: [ '2.1.2' ],
+50 silly audit   mkdirp: [ '1.0.4' ],
+50 silly audit   moment: [ '2.29.4' ],
+50 silly audit   'moment-duration-format': [ '2.3.2' ],
+50 silly audit   mongodb: [ '6.1.0', '4.17.1' ],
+50 silly audit   'mongodb-connection-string-url': [ '2.6.0' ],
+50 silly audit   mongoose: [ '6.12.0' ],
+50 silly audit   mpath: [ '0.9.0' ],
+50 silly audit   mquery: [ '4.0.3' ],
+50 silly audit   nan: [ '2.18.0' ],
+50 silly audit   nopt: [ '5.0.0' ],
+50 silly audit   npmlog: [ '5.0.1' ],
+50 silly audit   'object-assign': [ '4.1.1' ],
+50 silly audit   once: [ '1.4.0' ],
+50 silly audit   'path-is-absolute': [ '1.0.1' ],
+50 silly audit   punycode: [ '2.3.0' ],
+50 silly audit   'readable-stream': [ '3.6.2' ],
+50 silly audit   rimraf: [ '3.0.2' ],
+50 silly audit   'safe-buffer': [ '5.2.1' ],
+50 silly audit   'set-blocking': [ '2.0.0' ],
+50 silly audit   sift: [ '16.0.1' ],
+50 silly audit   'signal-exit': [ '3.0.7' ],
+50 silly audit   'simple-concat': [ '1.0.1' ],
+50 silly audit   'simple-get': [ '3.1.1' ],
+50 silly audit   'smart-buffer': [ '4.2.0' ],
+50 silly audit   socks: [ '2.7.1' ],
+50 silly audit   'sparse-bitfield': [ '3.0.3' ],
+50 silly audit   streamsearch: [ '1.1.0' ],
+50 silly audit   string_decoder: [ '1.3.0' ],
+50 silly audit   'string-width': [ '4.2.3' ],
+50 silly audit   'strip-ansi': [ '6.0.1' ],
+50 silly audit   strnum: [ '1.0.5' ],
+50 silly audit   tar: [ '6.2.0' ],
+50 silly audit   'ts-mixer': [ '6.0.3' ],
+50 silly audit   undici: [ '5.22.1' ],
+50 silly audit   'util-deprecate': [ '1.0.2' ],
+50 silly audit   uuid: [ '8.3.2' ],
+50 silly audit   'wide-align': [ '1.1.5' ],
+50 silly audit   wrappy: [ '1.0.2' ],
+50 silly audit   ws: [ '8.14.2' ],
+50 silly audit   yallist: [ '4.0.0' ],
+50 silly audit   fs: [ '0.0.1-security' ]
+50 silly audit }
+51 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-win32-x64-msvc
+52 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-win32-x64-msvc' ]
+53 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-musl
+54 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-musl' ]
+55 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu
+56 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm64-gnu' ]
+57 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf
+58 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-arm-gnueabihf' ]
+59 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-x64
+60 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-x64' ]
+61 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-darwin-arm64
+62 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-darwin-arm64' ]
+63 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-android-arm64
+64 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-android-arm64' ]
+65 timing reifyNode:node_modules/@napi-rs/canvas-win32-x64-msvc Completed in 9ms
+66 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-musl Completed in 9ms
+67 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm64-gnu Completed in 8ms
+68 timing reifyNode:node_modules/@napi-rs/canvas-linux-arm-gnueabihf Completed in 8ms
+69 timing reifyNode:node_modules/@napi-rs/canvas-darwin-x64 Completed in 7ms
+70 timing reifyNode:node_modules/@napi-rs/canvas-darwin-arm64 Completed in 7ms
+71 timing reifyNode:node_modules/@napi-rs/canvas-android-arm64 Completed in 7ms
+72 silly tarball no local data for fs@https://registry.npmjs.org/fs/-/fs-0.0.1-security.tgz. Extracting by manifest.
+73 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 705ms
+74 timing auditReport:getReport Completed in 710ms
+75 silly audit report {}
+76 timing auditReport:init Completed in 0ms
+77 timing reify:audit Completed in 711ms
+78 http fetch GET 200 https://registry.npmjs.org/fs/-/fs-0.0.1-security.tgz 774ms (cache miss)
+79 timing reifyNode:node_modules/fs Completed in 788ms
+80 timing reifyNode:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 1088ms
+81 timing reify:unpack Completed in 1089ms
+82 timing reify:unretire Completed in 0ms
+83 timing build:queue Completed in 1ms
+84 info run @napi-rs/canvas-linux-x64-musl@0.1.44 install node_modules/@napi-rs/canvas-linux-x64-musl node install.js
+85 info run @napi-rs/canvas-linux-x64-musl@0.1.44 install { code: 1, signal: null }
+86 verbose reify failed optional dependency /home/container/node_modules/@napi-rs/canvas-linux-x64-musl
+87 silly reify mark deleted [ '/home/container/node_modules/@napi-rs/canvas-linux-x64-musl' ]
+88 timing build:run:install:node_modules/@napi-rs/canvas-linux-x64-musl Completed in 203ms
+89 timing build:run:install Completed in 203ms
+90 timing build:deps Completed in 205ms
+91 timing build Completed in 206ms
+92 timing reify:build Completed in 206ms
+93 timing reify:trash Completed in 7ms
+94 timing reify:save Completed in 206ms
+95 timing reify Completed in 2894ms
+96 silly ADD node_modules/fs
+97 silly ADD
+98 silly ADD
+99 silly ADD
+100 silly ADD
+101 silly ADD
+102 silly ADD
+103 silly ADD
+104 silly ADD
+105 timing command:i Completed in 2907ms
+106 verbose exit 0
+107 timing npm Completed in 3583ms
+108 info ok
